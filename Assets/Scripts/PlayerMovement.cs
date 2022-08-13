@@ -165,7 +165,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnSwipeLeft()
     {
-        if (transform.position.x - 2 >= -2) //to left
+        if (transform.position.x - 2 >= -3) //to left
         {
             tempLocalPos -= 2;
             transform.DOMoveX((Mathf.Clamp(tempLocalPos, -2, 2)), (0.4f + (moveSpeed / 100f)));
@@ -174,7 +174,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnSwipeRight()
     {
-        if (transform.position.x + 2 <= +2) //to right
+        if (transform.position.x + 2 <= +3) //to right
         {
             tempLocalPos += 2;
             transform.DOMoveX((Mathf.Clamp(tempLocalPos, -2, 2)), (0.4f + (moveSpeed / 100f)));
